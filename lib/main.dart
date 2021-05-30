@@ -22,8 +22,7 @@ class NewWidget extends StatelessWidget {
       backgroundColor: Colors.teal,
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          // mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50.0,
@@ -33,10 +32,58 @@ class NewWidget extends StatelessWidget {
             Text(
               "Dummy Ross",
               style: TextStyle(
-                  fontSize: 40,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+                fontSize: 40,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Pacifico',
+              ),
             ),
+            Text(
+              'SOFTWARE DEVELOPER',
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'SourceSansPro',
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.5,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+              width: 150,
+              child: Divider(
+                color: Colors.white,
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(
+                vertical: 10,
+                horizontal: 25,
+              ),
+              color: Colors.white,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                ),
+                title: Text(
+                  '+91 9876678996',
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(
+                vertical: 10,
+                horizontal: 25,
+              ),
+              color: Colors.white,
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                ),
+                title: Text(
+                  'noob@noob.com',
+                ),
+              ),
+            )
           ],
         ),
       ),
